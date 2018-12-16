@@ -1,7 +1,18 @@
 import React from 'react'
 
-export default ({ pos = 'hor', color = 'red', size = 3, b }) => (
-  <div className={`${b ? 'block' : 'inline'}`}>
+export default ({
+  pos = 'hor',
+  color = 'red',
+  size = 3,
+  b,
+  onMouseEnter,
+  onMouseLeave
+}) => (
+  <div
+    className={`${b ? 'block' : 'inline'}`}
+    onMouseEnter={onMouseEnter}
+    onMouseLeave={onMouseLeave}
+  >
     <div className={`lego ${pos} ${color} `}>
       {Array.apply(null, { length: size })
         .map(Number.call, Number)

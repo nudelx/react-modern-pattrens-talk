@@ -191,3 +191,10 @@
   border: 2px solid yellow;
   display: inline-block;
 }
+.colorToolTipHolder {
+  border: 1px solid red;
+}
+.colorToolTip {
+  color: #282c34;
+  position: absolute;
+}

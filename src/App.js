@@ -6,6 +6,9 @@ import Brick, { BrickWithHook, BrickClass } from './lego/lego'
 import Card from './components/card'
 import Layout from './components/layout'
 import Roof from './components/Roof'
+import WithHover from './HOC/withHover'
+
+const BrickWithHover = WithHover(Brick)
 
 class App extends Component {
   render() {
@@ -14,7 +17,12 @@ class App extends Component {
         <Header />
         <div className="screen">
           <Box title="React Lego">
-            <div className="sketch">
+            <BrickWithHover pos={'hor'} size={3} color={'blue'} b />
+            <BrickWithHover pos={'hor'} size={3} color={'red'} b />
+            <BrickWithHover pos={'hor'} size={3} color={'green'} b />
+            <BrickWithHover pos={'hor'} size={3} color={'yellow'} b />
+            <BrickWithHover pos={'hor'} size={3} color={'blue'} b />
+            {/* <div className="sketch">
               <Roof />
               <Layout>
                 <Brick pos={'hor'} size={3} color={'blue'} />
@@ -46,7 +54,7 @@ class App extends Component {
                 <Brick pos={'hor'} size={3} color={'blue'} b />
                 <Brick pos={'hor'} size={3} color={'blue'} b />
               </Layout>
-            </div>
+            </div> */}
           </Box>
         </div>
       </div>
