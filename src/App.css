@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #5d616b;
+  background-color: #31393c;
   min-width: 90%;
   min-height: 100vh;
   font-family: Helvetica, Arial, sans-serif;
@@ -44,7 +44,7 @@
 }
 
 .box {
-  background-color: #3d3f44;
+  background-color: #374144;
   border: 1px solid #282c34;
   width: 90%;
   min-height: 400px;
@@ -54,8 +54,12 @@
   box-shadow: 0px 1px 18px 3px #282c34;
 }
 
+.box-center {
+  text-align: center !important;
+}
+
 .box-title {
-  background-color: #2e2f33;
+  background-color: #252c2d;
   padding: 10px 15px;
   text-align: left;
   font-size: 22px;
@@ -70,4 +74,120 @@
   min-width: 90%;
   text-align: left;
   padding: 20px;
+  margin-top: 50px;
+}
+
+.lego {
+  width: 80px;
+  height: 40px;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.hor {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hor .lego-connect {
+  width: 15px;
+  height: 15px;
+  margin-top: -12px;
+  border-radius: 5px;
+}
+
+.ver {
+  width: 40px;
+  height: 80px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.ver .lego-connect {
+  width: 15px;
+  height: 15px;
+  margin-right: -12px;
+  border-radius: 5px;
+}
+
+.red {
+  border: 1px solid#e23a31;
+  background-color: #ff4136;
+}
+
+.blue {
+  border: 1px solid#035fa5;
+  background-color: #036cc1;
+}
+
+.green {
+  border: 1px solid#307a59;
+  background-color: #01ff70;
+}
+
+.yellow {
+  border: 1px solid#c1a503;
+  background-color: #ffdc00;
+}
+
+.purple {
+  border: 1px solid#85144b;
+  background-color: #b10dc9;
+}
+
+.card {
+  vertical-align: top;
+  display: inline-block;
+  border: 1px dotted #4f5d60;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 10px;
+}
+
+.card-title {
+  padding: 5px;
+  color: #e5e285;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.card-content {
+  padding: 30px;
+}
+
+.decor {
+  border: 1px solid;
+}
+
+.layout {
+  display: inline-block;
+  /* border: 1px solid red; */
+  vertical-align: top;
+  border: 1px solid green;
+}
+
+.roof {
+  border: 1px solid red;
+  border: 100px solid red;
+  border-top: 50px solid transparent;
+  border-right: 170px solid transparent;
+  border-left: 170px solid transparent;
+}
+
+.sketch {
+  border: 2px solid yellow;
+  display: inline-block;
 }
