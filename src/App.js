@@ -17,12 +17,13 @@ class App extends Component {
         <Header />
         <div className="screen">
           <Box title="React Lego">
-            <BrickWithHover pos={'hor'} size={3} color={'blue'} b />
-            <BrickWithHover pos={'hor'} size={3} color={'red'} b />
+            {/* <BrickWithHover pos={'ver'} size={3} color={'blue'} />
+            <BrickWithHover pos={'ver'} size={3} color={'red'} /> */}
+            {/* <BrickWithHover pos={'hor'} size={3} color={'red'} b />
             <BrickWithHover pos={'hor'} size={3} color={'green'} b />
             <BrickWithHover pos={'hor'} size={3} color={'yellow'} b />
-            <BrickWithHover pos={'hor'} size={3} color={'blue'} b />
-            {/* <div className="sketch">
+            <BrickWithHover pos={'hor'} size={3} color={'blue'} b /> */}
+            <div className="sketch">
               <Roof />
               <Layout>
                 <Brick pos={'hor'} size={3} color={'blue'} />
@@ -54,7 +55,7 @@ class App extends Component {
                 <Brick pos={'hor'} size={3} color={'blue'} b />
                 <Brick pos={'hor'} size={3} color={'blue'} b />
               </Layout>
-            </div> */}
+            </div>
           </Box>
         </div>
       </div>
